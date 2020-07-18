@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import store from './store'
-import Home from '../views/Home.vue'
+import Home from './views/Home.vue'
 import About from './views/About.vue'
 import Login from './auth/Login.vue'
 import Register from './auth/Register.vue'
@@ -25,9 +25,6 @@ let router = new Router({
             path: '/register',
             name:  'register',
             component: Register,
-            meta: {
-                requiresAuth: true
-            }
         },
         {
             path: '/resources',
